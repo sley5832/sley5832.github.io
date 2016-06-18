@@ -431,6 +431,7 @@ footer {
 }
 footer > div {
   width:1170px;
+  margin:0 auto;
   padding:40px 15px;
   font-size:11px;
   color:#8b9698;
