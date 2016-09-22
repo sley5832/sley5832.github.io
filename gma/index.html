@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/jquery.dotdotdot.js"></script>
+    <!--[if lte IE 8]>
+    <script src=js/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("header" );
+        document.createElement("footer" );
+        document.createElement("section");
+        document.createElement("aside"  );
+        document.createElement("nav"    );
+        document.createElement("article");
+        document.createElement("hgroup" );
+      </script>
+      <noscript>
+         <strong>주의 !</strong>
+         귀하가 사용하고 계신 브라우저는 HTML5를 지원하고 있지 않아서, 할 수 없이 JScript를 써서 몇몇 요소가 제대로 보이도록 구현했습니다.
+         그런데 안타깝게도 귀하의 브라우저에선 스크립트 기능이 꺼져있습니다. 이 페이지가 제대로 표시되려면 스크립트 기능을 켜주셔야만 합니다.
+      </noscript>
+    <![endif]-->
+
+    <title>GMA</title>
+  </head>
+  <body>
+    <header>
+
+      <div class="top_line">
+        <div class="container">
+          <div class="greeting">글로벌 마케팅 아카데미에 오신것을 환영합니다.</div>
+          <ul class="member_cont">
+            <li><a href="#!">로그인</a></li>
+            <li><a href="#!">회원가입</a></li>
+            <li><a href="#!">나의아카데미</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //top_line -->
+
+      <div class="top_cont">
+        <div class="container">
+          <div class="left_banner">
+            <a href="#!"><img src="images/coupon.png" alt="" /></a>
+          </div>
+          <div class="logo">
+            <a href="#!"><img src="images/logo.png" alt="" /></a>
+          </div>
+          <div class="right_banner_wrap">
+            <ul class="right_banner">
+              <li><a href="#!"><img src="images/hd_slide_01.jpg" alt="" /></a></li>
+              <li><a href="#!"><img src="images/hd_slide_02.jpg" alt="" /></a></li>
+              <li><a href="#!"><img src="images/hd_slide_03.jpg" alt="" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //top_cont -->
+
+      <nav>
+        <div class="main_menu_bg"></div>
+        <div class="container">
+          <ul class="main_menu">
+            <li>
+              <a href="#!">아카데미소개</a>
+              <ul class="sub_menu">
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">교육과정안내</a>
+              <ul class="sub_menu">
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">생생현장</a>
+              <ul class="sub_menu">
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">수강후기</a>
+              <ul class="sub_menu">
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">멤버스공간</a>
+              <ul class="sub_menu">
+                <li><a href="#!">홍보센터</a></li>
+                <li><a href="#!">파트너</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- //main_menu -->
+
+          <div class="app_menu_wrap">
+            <span>어플학습관</span>
+            <div class="btn-menu">
+                <span class="btn-menu-bar"></span>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+      <!-- //nav -->
+
+      <div class="quick_ban">
+        <ul>
+          <li><a href=""><img src="images/quick_01.jpg" alt=""></a></li>
+          <li><a href=""><img src="images/quick_02.jpg" alt=""></a></li>
+          <li><a href=""><img src="images/quick_03.jpg" alt=""></a></li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            if($(window).scrollTop() > 208) {
+              $('.quick_ban').addClass('fixed');
+            } else {
+              $('.quick_ban').removeClass('fixed');
+            }
+          });
+        });
+      </script>
+
+    </header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- content_area -->
+      <div class="content_area">
+
+        <!-- main_visual -->
+        <div class="main_visual">
+          <ul class="main_slider">
+            <li><a href="#!"><img src="images/main_slide_01.jpg" alt="마케터를 꿈꾸다"></a></li>
+            <li><a href="#!"><img src="images/main_slide_01.jpg" alt="정진환 교수강연"></a></li>
+            <li><a href="#!"><img src="images/main_slide_01.jpg" alt="마케팅백서"></a></li>
+            <li><a href="#!"><img src="images/main_slide_01.jpg" alt="이주의 핫이슈"></a></li>
+          </ul>
+          <ul id="bx-pager">
+            <li><a data-slide-index="0"><span>마케터를 꿈꾸다</span></a></li>
+            <li><a data-slide-index="1"><span>정진환 교수강연</span></a></li>
+            <li><a data-slide-index="2"><span>마케팅백서</span></a></li>
+            <li><a data-slide-index="3"><span>이주의 핫이슈</span></a></li>
+          </ul>
+        </div>
+        <!-- //main_visual -->
+
+        <!-- story_board -->
+        <div class="story_board clear_fix">
+          <div class="story_tit_wrap clear_fix">
+            <p class="tit">스토리 in GMA</p>
+            <ul class="story_tab tabs">
+              <li class="on" rel="tab1"><a href="#!"><p class="tab1">공지사항</p></a></li>
+              <li rel="tab2"><a href="#!"><p class="tab2">뉴스클리핑</p></a></li>
+              <li rel="tab3"><a href="#!"><p class="tab3">정보게시판</p></a></li>
+            </ul>
+          </div>
+
+          <!-- story_tab_contents -->
+          <div class="story_tab_contents clear_fix">
+
+            <div class="story_bxslider_wrap">
+              <ul class="story_bxslider">
+                <li>
+                  <img src="images/video_cover.jpg" alt="마케팅기법을 통한">
+                  <p>
+                    마케팅기법을 통한 베테랑 마케터되기...
+                  </p>
+                </li>
+                <li>
+                  <img src="images/video_cover.jpg" alt="마케팅기법을 통한">
+                  <p>
+                    마케팅기법을 통한 베테랑 마케터되기...
+                  </p>
+                </li>
+                <li>
+                  <img src="images/video_cover.jpg" alt="마케팅기법을 통한">
+                  <p>
+                    마케팅기법을 통한 베테랑 마케터되기...
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- detail_contents -->
+            <div id="tab1" class="detail_contents">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_01.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_02.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_03.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_04.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //detail_contents -->
+
+            <!-- detail_contents -->
+            <div id="tab2" class="detail_contents">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_03.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_02.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_03.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_04.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //detail_contents -->
+
+            <!-- detail_contents -->
+            <div id="tab3" class="detail_contents">
+              <ul>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_02.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_02.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_03.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <img src="images/t1_list_04.jpg" alt="">
+                    <p>업종에 최적화된 마케팅<br>제2의 도약 꿈꾼다!</p>
+                    <span>자영업자(대여사업) / 김승희</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //detail_contents -->
+
+            <script>
+              /* 탭메뉴 */
+              $(function() { $(".detail_contents").hide(); $(".detail_contents:first").show();
+              $(".story_board ul.tabs li").click(function() {$(".story_board ul.tabs li").removeClass("on"); $(this).addClass("on"); $(".detail_contents").hide()
+              var activeTab = $(this).attr("rel"); $("#"+activeTab).show() /* fadeIn() */
+              }); });
+            </script>
+          </div>
+          <!-- //story_tab_contents -->
+
+        </div>
+        <!-- //story_board -->
+
+      </div>
+      <!-- //content_area -->
+
+      <!-- member_area -->
+      <div class="member_area">
+
+        <!-- login_form -->
+        <div class="login_form">
+          <form action="">
+            <input type="text" name="gma_id" class="gma_id" value="" placeholder="아이디 또는 이메일"><br>
+            <input type="password" name="gma_pw" class="gma_pw" value="" placeholder="비밀번호"><br>
+            <input type="submit" class="gma_submit" value="로그인">
+            <div class="login_check">
+              <input type="checkbox" name="auto_login" id="auto_login"><label for="auto_login">로그인유지</label>
+              <div class="member_check">
+                <a href="#!" class="join">
+                  회원가입
+                </a>
+                <a href="#!" class="member_find">
+                  아이디/비밀번호찾기
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- //login_form -->
+
+
+        <!-- latest_board -->
+        <div class="latest_board">
+
+          <div class="main_tabs_area">
+            <ul class="tabs">
+              <li class="on" rel="notice_tab"><p class="notice_tab">공지사항</p></li>
+              <li rel="news_tab"><p class="news_tab">뉴스클리핑</p></li>
+              <li rel="info_tab"><p class="info_tab">정보게시판</p></li>
+            </ul>
+          </div>
+
+          <div id="notice_tab" class="tab_content">
+            <span class="more">
+              <a href="#!">
+                <img src="images/btn-more.png" alt="더보기">
+              </a>
+            </span>
+            <ul>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다. 하계 세미나</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 하계 세미나 일정안내</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[이벤트] 이벤트 공지입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 5월 자격시험 안내 입니다.</p><span>2016.07.26</span></a></li>
+            </ul>
+          </div>
+
+          <div id="news_tab" class="tab_content">
+            <span class="more">
+              <a href="#!">
+                <img src="images/btn-more.png" alt="더보기">
+              </a>
+            </span>
+            <ul>
+              <li><a href="#!"><p>[공지] 7월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+            </ul>
+          </div>
+
+          <div id="info_tab" class="tab_content">
+            <span class="more">
+              <a href="#!">
+                <img src="images/btn-more.png" alt="더보기">
+              </a>
+            </span>
+            <ul>
+              <li><a href="#!"><p>[공지] 8월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+              <li><a href="#!"><p>[공지] 6월 자격시험 입니다.</p><span>2016.07.26</span></a></li>
+            </ul>
+          </div>
+
+          <script>
+            /* 탭메뉴 */
+            $(function() { $(".tab_content").hide(); $(".tab_content:first").show();
+            $(".main_tabs_area ul.tabs li").click(function() {$(".main_tabs_area ul.tabs li").removeClass("on"); $(this).addClass("on"); $(".tab_content").hide()
+            var activeTab2 = $(this).attr("rel"); $("#"+activeTab2).show() /* fadeIn() */
+            }); });
+          </script>
+        </div>
+        <!-- //latest_board -->
+
+        <!-- cs_wrap" -->
+        <div class="cs_wrap clear_fix">
+          <div class="cs_center">
+            <a href="#!" title="온라인상담하기"><img src="images/helpCenter.jpg" alt="" /></a>
+          </div>
+
+          <div class="icon_banner">
+            <ul>
+              <li><a href="#!" title="강의안내 바로가기"><img src="images/infoTutorial.jpg" alt="강의안내 바로가기"></a></li>
+              <li><a href="#!" title="블로그등록 바로가기"><img src="images/getBlog.jpg" alt="블로그등록 바로가기"></a></li>
+              <li><a href="#!" title="방문교육신청 바로가기"><img src="images/visitEdu.jpg" alt="방문교육신청 바로가기"></a></li>
+              <li><a href="#!" title="강의블로그진단신청안내 바로가기"><img src="images/blogPrint.jpg" alt="강의블로그진단신청안내 바로가기"></a></li>
+              <li><a href="#!" title="Q&amp;A 바로가기"><img src="images/qna.jpg" alt="Q&amp;A 바로가기"></a></li>
+              <li><a href="#!" title="FAQ 바로가기"><img src="images/faq.jpg" alt="FAQ 바로가기"></a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- //cs_wrap" -->
+
+      </div>
+      <!-- //member_area -->
+    </div>
+    <!-- //container -->
+
+    <div class="event_banner">
+      <div class="container">
+        <img src="images/eventBanner_text.png" alt="GMA 회원님께 드리는 핫한 소식 글로벌 마케팅이 추천하는 9월의 특강!! 10% 추가 할인가!" />
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <p class="tok_tit"><img src="images/tok_tit.png" alt="" /></p>
+
+      <!-- thum_box_wrap -->
+      <div class="thum_box_wrap">
+        <ul class="thum">
+
+          <li>
+            <img src="images/tok_01.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                추운 날씨에도 사람들이 많이 인것을 보고 놀랐고 내가 노력하면 원하는 것을 성취할 수 있겠다. 인터뷰컨퍼런스에 와서 보니까 좀
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum01 -->
+
+          <li>
+            <div class="defualt_content blue">
+              <p class="subject">심지혜 수강생</p>
+              <p class="content">
+                인터뷰소장님 강의를 들으면서 하나 하나씩 고쳐나가면서 온라인 마케터로서 성장할 수 있는 계기가 되었으며
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum02 -->
+
+          <li>
+            <img src="images/tok_02.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                추운 날씨에도 사람들이 많이 인것을 보고 놀랐고 내가 노력하면 원하는 것을 성취할 수 있겠다. 인터뷰컨퍼런스에 와서 보니까 좀
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum03 -->
+
+          <li>
+            <img src="images/tok_03.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                추운 날씨에도 사람들이 많이 인것을 보고 놀랐고 내가 노력하면 원하는 것을 성취할 수 있겠다. 인터뷰컨퍼런스에 와서 보니까 좀
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum04 -->
+
+          <li>
+            <div class="defualt_content sky">
+              <p class="subject">김호현 수강생 인터뷰</p>
+              <p class="content">
+                강의를 듣기 위해 회사를 조퇴하고 먼 거리를 왔는데 오기를 참 잘했다는 생각을 합니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum05 -->
+
+          <li>
+            <div class="defualt_content brown">
+              <p class="subject">이규왕 수강생</p>
+              <p class="content">
+                인터뷰컨퍼런스에 와서 보니까 좀 더 구체적으로 자세히 온라인 마케팅에 대해 알게 되어 좋았습니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum06 -->
+
+          <li>
+            <img src="images/tok_04.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                인터뷰컨퍼런스에 와서 보니까 좀 더 구체적으로 자세히 온라인 마케팅에 대해 알게 되어 좋았습니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum07 -->
+
+          <li>
+            <img src="images/tok_05.jpg" alt="" />
+          </li>
+          <!-- thum08 -->
+
+          <li>
+            <div class="defualt_content magenta">
+              <p class="subject">김호현 수강생 인터뷰</p>
+              <p class="content">
+                강의를 듣기 위해 회사를 조퇴하고 먼 거리를 왔는데 오기를 참 잘했다는 생각을 합니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum09 -->
+
+          <li>
+            <img src="images/tok_06.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생 인터뷰</p>
+              <p class="content">
+                강의를 듣기 위해 회사를 조퇴하고 먼 거리를 왔는데 오기를 참 잘했다는 생각을 합니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum10 -->
+
+          <li>
+            <img src="images/tok_07.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                인터뷰컨퍼런스에 와서 보니까 좀 더 구체적으로 자세히 온라인 마케팅에 대해 알게 되어 좋았습니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum11 -->
+
+          <li>
+            <img src="images/tok_08.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">이유진 수강생</p>
+              <p class="content">
+                인터뷰컨퍼런스에 와서 보니까 좀 더 구체적으로 자세히 온라인 마케팅에 대해 알게 되어 좋았습니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum12 -->
+
+          <li>
+            <div class="defualt_content orange">
+              <p class="subject">홍길동 수강생</p>
+              <p class="content">
+                추운 날씨에도 사람들이 많이 인것을 보고 놀랐고 내가 노력하면 원하는 것을 성취할 수 있겠다 생각을 합니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum13 -->
+
+          <li>
+            <img src="images/tok_09.jpg" alt="" />
+            <div class="up_content">
+              <p class="subject">임승현 수강생</p>
+              <p class="content">
+                강의를 듣기 위해 회사를 조퇴하고 먼 거리를 왔는데 오기를 참 잘했다는 생각을 합니다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum14 -->
+
+          <li>
+            <div class="defualt_content light_brown">
+              <p class="subject">김마루 수강생 인터뷰</p>
+              <p class="content">
+                인터뷰소장님 강의를 들으면서 하나 하나씩 고쳐나가면서 온라인 마케터로서 성장할 수 있는 계기가 되었으면 좋겠다.
+              </p>
+              <a href="#!">
+                바로가기 >
+              </a>
+            </div>
+          </li>
+          <!-- thum15 -->
+
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+          $("p.content").dotdotdot();
+
+          $('ul.thum > li').hover(function(){
+            $(this).find('.up_content').stop().addClass('on');
+          }, function(){
+            $(this).find('.up_content').stop().removeClass('on');
+          });
+
+        });
+      </script>
+      <!-- //thum_box_wrap -->
+
+      <!-- board_area -->
+      <div class="board_area">
+
+        <div class="clear_fix">
+          <!-- best_blog -->
+          <div class="best_blog">
+            <p class="board_tit">베스트 블로그 5</p>
+            <img class="ribbon" src="images/icon_best.png" alt="Best 5" />
+            <ol>
+              <li><span class="top">1</span>베스트 블로그이름이 나옵니다.[lifeess]</li>
+              <li><span class="top">2</span>베스트 블로그이름이 나옵니다.[abcd]</li>
+              <li><span>3</span>베스트 블로그이름.[1234]</li>
+              <li><span>4</span>베스트 블로그이름.[1234]</li>
+              <li><span>5</span>베스트 블로그이름이 나옵니다.[abcd]</li>
+            </ol>
+          </div>
+          <!-- //best_blog -->
+
+          <div class="marketing_banner">
+            <a href="#!"><img src="images/blogBanner.jpg" alt="마케팅 배너" /></a>
+          </div>
+
+          <!-- monthly_blog -->
+          <div class="monthly_blog">
+            <p class="monthly_tit">이달의 <span>블로그</span></p>
+
+              <div class="blog_wrap">
+                <a href="#!">
+                  <div class="blog_list clear_fix">
+                    <img src="images/blogThumb.jpg" alt="">
+                    <p class="blog_tit">화장품소개 블로그</p>
+                    <p class="blog_cont"><b>김유진님</b>| lifeess</p>
+                  </div>
+                </a>
+                <a href="#!">
+                  <div class="blog_list clear_fix">
+                    <img src="images/blogThumb_02.jpg" alt="">
+                    <p class="blog_tit">핸드폰판매 블로그</p>
+                    <p class="blog_cont"><b>홍길동님</b>| lifeess</p>
+                  </div>
+                </a>
+                <a href="#!">
+                  <div class="blog_list clear_fix">
+                    <img src="images/blogThumb_03.jpg" alt="">
+                    <p class="blog_tit">자동차판매 블로그</p>
+                    <p class="blog_cont"><b>고우리님</b>| lifeess</p>
+                  </div>
+                </a>
+              </div>
+
+          </div>
+          <!-- //monthly_blog -->
+        </div>
+
+
+        <!-- lecture class -->
+        <div class="lecture">
+          <p class="lecture_tit">추천 강좌</p>
+
+          <div class="lecture_box">
+            <ul class="movie_slider">
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_01.png" alt="" />
+                  <p class="movie_tit">Advanced class</p>
+                  <p class="movie_cont">[Lv.1 온라인마케팅 실무상급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_02.png" alt="" />
+                  <p class="movie_tit">강좌제목</p>
+                  <p class="movie_cont">[Lv.1 온라인마케팅 실무 상급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_03.png" alt="" />
+                  <p class="movie_tit">프리미엄 실전직무과정</p>
+                  <p class="movie_cont">[Lv.2 창업, 취업 실무 고급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_04.png" alt="" />
+                  <p class="movie_tit">High class</p>
+                  <p class="movie_cont">[Lv.2 창업, 취업 실무 고급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_05.png" alt="" />
+                  <p class="movie_tit">Top class</p>
+                  <p class="movie_cont">[Lv.3 온라인 프로마케터 전문과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_01.png" alt="" />
+                  <p class="movie_tit">Advanced class</p>
+                  <p class="movie_cont">[Lv.1 온라인마케팅 실무상급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_02.png" alt="" />
+                  <p class="movie_tit">강좌제목</p>
+                  <p class="movie_cont">[Lv.1 온라인마케팅 실무 상급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_03.png" alt="" />
+                  <p class="movie_tit">프리미엄 실전직무과정</p>
+                  <p class="movie_cont">[Lv.2 창업, 취업 실무 고급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_04.png" alt="" />
+                  <p class="movie_tit">High class</p>
+                  <p class="movie_cont">[Lv.2 창업, 취업 실무 고급과정]</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#!">
+                  <img src="images/tut_05.png" alt="" />
+                  <p class="movie_tit">Top class</p>
+                  <p class="movie_cont">[Lv.3 온라인 프로마케터 전문과정]</p>
+                </a>
+              </li>
+
+            </ul>
+            <img class="bar" src="images/rcm_tut_bar.jpg" alt="" />
+          </div>
+          <!-- //lecture_box -->
+        </div>
+        <!-- //lecture_class -->
+
+        <div class="community_board">
+          <p class="board_tit">GMA 지식인</p>
+          <ul>
+            <li><a href="#!"><p>[공지] 6월 자격시험 입니다. 하계 세미나</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 하계 세미나 일정안내</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[이벤트] 이벤트 공지입니다.</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 5월 자격시험 안내 입니다.</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 6월 자격시험 입니다. 하계 세미나</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 하계 세미나 일정안내</p><span>2016.07.26</span></a></li>
+          </ul>
+          <ul class="border-left">
+            <li><a href="#!"><p>[공지] 6월 자격시험 입니다. 하계 세미나</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 하계 세미나 일정안내</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[이벤트] 이벤트 공지입니다.</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 5월 자격시험 안내 입니다.</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[공지] 하계 세미나 일정안내</p><span>2016.07.26</span></a></li>
+            <li><a href="#!"><p>[이벤트] 이벤트 공지입니다.</p><span>2016.07.26</span></a></li>
+          </ul>
+          <span class="more">
+            <a href="#!">
+              <img src="images/btn-more.png" alt="더보기">
+            </a>
+          </span>
+        </div>
+
+        <div class="solution_banner">
+          <a href="#!"><img src="images/sloution_banner_01.jpg" alt="단기 수강생만을 위한 토익 프리패스" /></a>
+          <a href="#!"><img src="images/sloution_banner_02.jpg" alt="M Club PRIDE 7" /></a>
+        </div>
+
+      </div>
+      <!-- //board_area -->
+
+    </div>
+    <!-- //container -->
+
+    <div class="cpr_wrap">
+      <div class="container">
+
+        <ul class="cpr_logo">
+          <li>
+            <a href="#!">
+              <img src="images/cpr_sci.jpg" alt="" />
+              <p>교육과학기술부 규정<br>원격평생교육시설인가<br>인천북부교육청</p>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <img src="images/cpr_krivet.jpg" alt="" />
+              <p>교육부 규정<br>국무총리 산하 국책연구기간<br>한국직업능력개발원</p>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <img src="images/cpr_koita.jpg" alt="" />
+              <p>한국마케팅아카데미<br>마케팅교육 공식 협약기관<br>충남보령시청</p>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <img src="images/cpr_boryung.jpg" alt="" />
+              <p>미래창조과학부 규정<br>기술부설연구소 설립인가<br>한국산업기술진흥원</p>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <img src="images/cpr_ibk.jpg" alt="" />
+              <p>IBK기업은행<br>패밀리 우량기업선정<br>IBK기업은행</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="scroll_control">
+      <a href="#!" class="goto_top"><img src="images/go-top.png" alt="" /></a>
+      <a href="#!" class="goto_bottom"><img src="images/go-bot.png" alt="" /></a>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 200) {
+            $('.scroll_control').fadeIn();
+          } else {
+            $('.scroll_control').fadeOut();
+          }
+        });
+
+        $('a.goto_top').click(function(){
+          $('html, body').animate({scrollTop: 0}, 800);
+        });
+        $('a.goto_bottom').click(function(){
+          $('html, body').animate({scrollTop: $(document).height()}, 800);
+        });
+      });
+    </script>
+
+    <footer>
+      <div class="footer_btn_wrap">
+        <div class="container">
+          <ul class="footer_btn">
+            <li><a href="#!">GMA소개</a></li>
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보취급방침</a></li>
+            <li><a href="#!">고객지원</a></li>
+          </ul>
+          <div class="family_site">
+            <h6>Family Site</h6>
+            <ul>
+              <li><a href="#!">Family Site</a></li>
+              <li><a href="#!">Family Site</a></li>
+              <li><a href="#!">Family Site</a></li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('.family_site').hover(
+                function(){
+                  $(this).find('ul').stop().slideDown(200);
+              },
+                function(){
+                  $(this).find('ul').stop().slideUp(200);
+              });
+
+            })
+          </script>
+        </div>
+      </div>
+      <div class="container">
+        <div class="ft_logo"><img src="images/footer_logo.png" alt="" /></div>
+        <div class="homepage_info">
+          ㈜글로벌마케팅아카데미       대표이사 도학진   전화:1670-7441   FAX:02-2608-2650     개인정보관리책임자:최지성    이메일:gmacoc@naver.com<br>
+          본사 : 서울시 강서구 화곡로 278 동도센트리움 3f   |  교육장 : 서울시 강서구 화곡로 278 동도센트리움 4f<br>
+          Copyright (c) 2016  GMA. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+  </body>
+</html>
